@@ -86,7 +86,7 @@ for (var a = 0; a < keyboard_.length; a++){
 }
 
 function add_symbol(symbol){
-    if (cord_w <= word_len & cord_h <= words && !end_game){
+    if (cord_w < word_len & cord_h < words & !end_game){
         var childs = game.querySelectorAll('.word_line');
         for (var i = 0; i < childs.length; i++){
             var blocks = childs[i].querySelectorAll('.block');
@@ -96,12 +96,13 @@ function add_symbol(symbol){
                 }
             }
         }
+	cord_w += 1;
     }
-    cord_w += 1;
+    
 }
 
 function del_symbol(){
-    if (cord_w > 0 && !end_game){
+    if (cord_w > 0 & !end_game){
         cord_w -= 1;
         var childs = game.querySelectorAll('.word_line');
         var blocks = childs[cord_h].querySelectorAll('.block');
@@ -159,7 +160,7 @@ function enter(){
                 msgBox('You Win!');
                 end_game = true;
             }
-            else if (success_count != word_len && cord_h == words){
+            else if (success_count != word_len & cord_h == words){
                 msgBox('You Lose! Success word is ' + random_word);
                 end_game = true;
             }
