@@ -9,7 +9,7 @@ var keyboard_ = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'];
 var cord_w = 0;
 var cord_h = 0;
 
-var url = 'wordlists/dictionary.json';
+var url = 'https://raw.githubusercontent.com/droyson/go-fetch-words/main/5-letter-words.json';
 var storedText;
 
 var word_list = [];
