@@ -1,0 +1,105 @@
+@media screen {
+    #outer{
+        width: screen width - 40;
+    }
+    #inner{
+        margin: 2% auto;
+        width: 80%;
+    }
+}
+header{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+}
+
+header h1.title{
+    color: white;
+    margin-left: 10%;
+}
+
+header img.update{
+    width: 48px;
+    height: 48px;
+}
+.game{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-color: #111;
+}
+.game .line, .keyboard .line{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    border: 2px solid purple;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-color: #111;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+.gray{
+    background-color: gray;
+}
+.keyboard{
+    margin-left: auto;
+    margin-right: auto; 
+    width: 700px;
+}
+.key, .del{
+    width: 60px;
+}
+.enter{
+    width: 200px;
+}
+.key, .enter, .del{
+    height: 60px;
+    text-align: center;
+    /* background-color: purple; */
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 2px solid purple;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 45px;
+}
+.word_line, .key_line{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.restart{
+    text-align: center;
+}
+.restart button{
+    height: 30px;
+    text-align: center;
+    background-color: #111;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.key:hover, .enter:hover, .del:hover, .restart button:hover{
+    background-color: #222;
+}
